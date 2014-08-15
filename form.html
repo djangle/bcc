@@ -1,0 +1,293 @@
+<!-- comment
+BTA BCC 2014 payment form
+VERSION 8
+Adam Amodio
+aamodio@btaoregon.org
+-->
+
+<?php
+$fname=$_GET['BillingFirstName'];
+$lname=$_GET['BillingLastName'];
+$email=$_GET['BillingEmail'];
+$addr=$_GET['BillingAddress1'];
+$city=$_GET['BillingCity'];
+$state=$_GET['BillingStateProvince'];
+$zip=$_GET['BillingPostalCode'];
+$phone=$_GET['BillingPhone'];
+$fullname=$fname . " " . $lname;
+$amount=$_GET['amount'];
+$level=$_GET['level'];
+
+switch($level) {
+    case A:
+        $qA = 1;
+        break;
+    case B:
+        $qB = 1;
+        break;
+    case C:
+        $qC = 1;
+        break;
+    case D:
+        $qD = 1;
+        break;
+    case E:
+        $qE = 1;
+        break;
+    default:
+        $qF = 1;
+        break;
+} 
+?>
+
+<form id="Donation" method="post" action="https://faas.cloud.clickandpledge.com">
+          
+          
+<table width="100%" border="2" cellspacing="2" cellpadding="2">
+        <tr>
+          <td>You&#39;re almost there - How will <i>you</i> arrive?
+            </td></tr>
+        <tr>
+          <td>
+              <hr>
+          <br>
+          Qty.
+          <input name="UnitPrice1" 		type="hidden" 	id="UnitPrice1" 		value="105" /><input name="UnitDeductible1" 	type="hidden" 	id="UnitDeductible1" 	value="40" /><input name="ItemID1" 			type="hidden" 	id="ItemID1" 			value="1" /><input name="ItemName1" 		type="hidden" 	id="ItemName1" 			value="Ride + Membership + Light Set + T-Shirt ($105)" /><input name="Quantity1" 		type="text" 	id="Quantity1" value="<?php echo $qA;?>" size="2"/> <strong>Ride + Membership + Light Set + T-Shirt</strong> ($105)<input name="SKU1" 				type="hidden" 	id="SKU1" 				value="2014bccA" />
+          <a href="https://btaoregon.org/wp-content/uploads/2014/06/lightset.jpg"><img src="https://btaoregon.org/wp-content/uploads/2014/06/lightset-300x300.jpg" alt="pdw-lightset" width="150" height="150" align="right" class="alignnone size-medium wp-image-37148" /></a><a href="https://btaoregon.org/wp-content/uploads/2014/06/HomeTripShirtAd1.png"><img src="https://btaoregon.org/wp-content/uploads/2014/06/HomeTripShirtAd1.png" alt="Home&amp;TripShirtAd" width="300" height="200" class="alignright size-full wp-image-37296" /></a>
+Pedal with Purpose as a BTA Member, receive over $300 in Bike Bucks plus access to 120+ standing discounts at bike friendly businesses throughout Oregon, and get your 2014 Challenge t-shirt PLUS a Spaceship&#8482; 3/ RADBOT&#8482; 500 light set* from <a href="https://www.ridepdw.com/" target="_blank">Portland Design Works</a>. As a thank-you for your support, we&#39;ll ship the lights AND the t-shirt to you for FREE!<div id="apparel" style="background-color:lightgrey;"><p>All t-shirts are American Apparel brand.  Women's sizes run small.  See size charts on the <a href="http://www.americanapparel.net/" target="_blank">American Apparel</a> website.</p>What size would you like?<input name="FieldName1" type="hidden" maxlength="30" size="30" value="ShirtSizeA"/><select name="FieldValue1" type="text" ><option>Unselected</option>
+                    <option>Womens Small</option>
+                    <option>Womens Medium</option>
+                    <option>Womens Large</option>
+                    <option>Womens XL</option>
+                    <option>Womens XXL</option>
+                    <option>Mens Small</option>
+                    <option>Mens Medium</option>
+                    <option>Mens Large</option>
+                    <option>Mens XL</option>
+                    <option>Mens XXL</option>
+                    </select> </p>
+</div><hr></td>
+        </tr>
+        <tr>
+          <td>
+          <br>
+          Qty.
+          	<input name="UnitPrice2" 		type="hidden" 	id="UnitPrice2" 		value="60" /><input name="UnitDeductible2" 	type="hidden" 	id="UnitDeductible2" 	value="40" /><input name="ItemID2" 			type="hidden" 	id="ItemID2" 			value="2" /><input name="ItemName2" 		type="hidden" 	id="ItemName2" 			value="Ride + Membership + T-Shirt ($60)" /><input name="Quantity2" 		type="text" 	id="Quantity2" value="<?php echo $qB;?>" size="2"/> <strong>Ride + Membership + T-Shirt</strong> ($60)<input name="SKU2" 				type="hidden" 	id="SKU2" 				value="2014bccB" />
+<a href="https://btaoregon.org/wp-content/uploads/2014/06/HomeTripShirtAd1.png"><img src="https://btaoregon.org/wp-content/uploads/2014/06/HomeTripShirtAd1.png" alt="Home&amp;TripShirtAd" width="300" height="200" class="alignright size-full wp-image-37296" /></a>
+Pedal with Purpose as a BTA Member, receive over $300 in Bike Bucks plus access to 120+ standing discounts at bike friendly businesses throughout Oregon, and get your 2014 Challenge t-shirt. As a thank-you for your support we'll ship the t-shirt to you for FREE!<div id="apparel" style="background-color:lightgrey;"><p>All t-shirts are American Apparel brand.  Women's sizes run small.  See size charts on the <a href="http://www.americanapparel.net/" target="_blank">American Apparel</a> website.</p>What size would you like?<input name="FieldName2" type="hidden" maxlength="30" size="30" value="ShirtSizeB"/><select name="FieldValue2" type="text" ><option>Unselected</option>
+                    <option>Womens Small</option>
+                    <option>Womens Medium</option>
+                    <option>Womens Large</option>
+                    <option>Womens XL</option>
+                    <option>Womens XXL</option>
+                    <option>Mens Small</option>
+                    <option>Mens Medium</option>
+                    <option>Mens Large</option>
+                    <option>Mens XL</option>
+                    <option>Mens XXL</option>
+                    </select> </p></div><hr></td>
+        </tr>
+        <tr>
+          <td>
+          <br>
+          Qty.
+          	<input name="UnitPrice3" 		type="hidden" 	id="UnitPrice3" 		value="40" /><input name="UnitDeductible3" 	type="hidden" 	id="UnitDeductible3" 	value="40" /><input name="ItemID3" 			type="hidden" 	id="ItemID3" 			value="3" /><input name="ItemName3" 		type="hidden" 	id="ItemName3" 			value="Ride + Membership ($40)" /><input name="Quantity3" 		type="text" 	id="Quantity3" value="<?php echo $qC;?>" size="2"/> <strong>Ride + Membership</strong> ($40)<input name="SKU3" 				type="hidden" 	id="SKU3" 				value="2014bccC" />
+Pedal with Purpose this September, receive over $300 in Bike Bucks plus access to 120+ standing discounts at bike friendly businesses throughout Oregon, and help support bicycle advocacy, education, and encouragement year-round, with your BTA Membership.<hr></td>
+        </tr>
+        <tr>
+          <td>
+          <br>
+          Qty.
+          	<input name="UnitPrice4" 		type="hidden" 	id="UnitPrice4" 		value="30" /><input name="UnitDeductible4" 	type="hidden" 	id="UnitDeductible4" 	value="0" /><input name="ItemID4" 			type="hidden" 	id="ItemID4" 			value="4" /><input name="ItemName4" 		type="hidden" 	id="ItemName4" 			value="Ride + T-Shirt ($30)" /><input name="Quantity4" 		type="text" 	id="Quantity4" value="<?php echo $qD;?>" size="2"/> <strong>Ride + T-Shirt</strong> ($30)<input name="SKU4" 				type="hidden" 	id="SKU4" 				value="2014bccD" />
+<a href="https://btaoregon.org/wp-content/uploads/2014/06/HomeTripShirtAd1.png"><img src="https://btaoregon.org/wp-content/uploads/2014/06/HomeTripShirtAd1.png" alt="Home&amp;TripShirtAd" width="300" height="200" class="alignright size-full wp-image-37296" /></a>
+Ride the Bike Commute Challenge in style with your new Bike Commute Challenge t-shirt! Enjoy FREE shipping when you order the shirt at registration.<div id="apparel" style="background-color:lightgrey;"><p>All t-shirts are American Apparel brand.  Women's sizes run small.  See size charts on the <a href="http://www.americanapparel.net/" target="_blank">American Apparel</a> website.</p>What size would you like?<input name="FieldName3" type="hidden" maxlength="30" size="30" value="ShirtSizeD"/><select name="FieldValue3" type="text" ><option>Unselected</option>
+                    <option>Womens Small</option>
+                    <option>Womens Medium</option>
+                    <option>Womens Large</option>
+                    <option>Womens XL</option>
+                    <option>Womens XXL</option>
+                    <option>Mens Small</option>
+                    <option>Mens Medium</option>
+                    <option>Mens Large</option>
+                    <option>Mens XL</option>
+                    <option>Mens XXL</option>
+                    </select> </p></div><hr></td>
+        </tr>
+        <tr>
+          <td>
+          <br>
+          Qty.
+            <input name="UnitPrice5" 		type="hidden" 	id="UnitPrice5" 		value="30" /><input name="UnitDeductible5" 	type="hidden" 	id="UnitDeductible5" 	value="0" /><input name="ItemID5" 			type="hidden" 	id="ItemID5" 			value="5" /><input name="ItemName5" 		type="hidden" 	id="ItemName5" 			value="Ride + Front light ($30)" /><input name="Quantity5" 		type="text" 	id="Quantity5" value="<?php echo $qE;?>" size="2"/> <strong>Ride + Front light</strong> ($30)<input name="SKU5" 				type="hidden" 	id="SKU5" 				value="2014bccE" /><a href="https://btaoregon.org/wp-content/uploads/2014/06/frontlight.jpg"><img src="https://btaoregon.org/wp-content/uploads/2014/06/frontlight-300x300.jpg" alt="pdw-frontlight" width="150" height="150" align="right" class="alignnone size-medium wp-image-37149"/></a>
+Ride the Bike Commute Challenge and stay visible on the road with a Spaceship&#8482; 3 from <a href="https://www.ridepdw.com/" target="_blank">Portland Design Works</a>. Lights ordered during registration are shipped free of charge!<hr></td>
+        </tr>         
+    <tr>
+      <td>
+                <br><center><strong><font size="3">OR</font></strong></center><br>
+            <strong>Ride Your Way</strong>
+            You choose your donation: From $0 - $1,000, and when you donate $10 or more you get a complimentary bike registration kit and bike theft shield from <a href="http://www.project529.com">Project 529</a>.
+            <input name="ItemID6" type="hidden" id="ItemID6" value="6" /><input name="ItemName6" type="hidden" id="ItemName6" value="Ride Your Way" /><input name="Quantity6" type="hidden" id="Quantity6" value="<?php echo $qF;?>" /><input name="UnitDeductible6" type="hidden" id="UnitDeductible6" value="100%" /><input name="SKU6"	type="hidden" 	id="SKU6"	value="2014bccF" /><input name="UnitPrice6" type="text" id="UnitPrice6" value="<?php echo $amount;?>" size="10" label="$"/> (in dollars)
+            <hr><br></td>
+    </tr>
+    <tr>
+      <td colspan="2"><br><strong>Personal Information</strong></td>
+    </tr>
+    <tr>
+      <td>
+        <table>
+        <tr>
+          <td width="28%">First name:</td>
+          <td width="72%"><input name="BillingFirstName" type="text" id="BillingFirstName" value="<?php echo $fname;?>" size="30" required/><font color="red">*</font></td>
+        </tr>
+        <tr>
+          <td>Last name:</td>
+          <td><input name="BillingLastName" type="text" id="BillingLastName" value="<?php echo $lname;?>" size="30" required/><font color="red">*</font></td>
+        </tr>
+        <tr>
+          <td>Phone number:</td>
+          <td><input name="BillingPhone" type="text" id="BillingPhone" value="<?php echo $phone;?>" size="30" required/><font color="red">*</font></td>
+        </tr>
+        <tr>
+          <td>Email address:</td>
+          <td>
+              <input name="BillingEmail" type="text" id="BillingEmail" value="<?php echo $email;?>" size="40" required/><font color="red">*</font></td>
+        </tr>
+</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>Shipping Information</strong></td>
+    </tr>
+    <tr>
+      <td>
+        <tr>
+          <td width="28%">Street:</td>
+          <td width="72%"><input name="BillingAddress1" type="text" id="BillingAddress1" value="<?php echo $addr;?>" size="40" required/><font color="red">*</font></td>
+        </tr>
+        <tr>
+          <td>City:</td>
+          <td><input name="BillingCity" type="text" id="BillingCity" value="<?php echo $city;?>" size="40" required/><font color="red">*</font></td>
+        </tr>
+        <tr>
+          <td>State:</td>
+          <td>
+              <select name="BillingStateProvince" size="1" id="BillingStateProvince" required><font color="red">*</font>
+	<option value="<?php echo $state;?>"><?php echo $state;?></option>
+    <option value="AL">AL</option>
+	<option value="AK">AK</option>
+	<option value="AZ">AZ</option>
+	<option value="AR">AR</option>
+	<option value="CA">CA</option>
+	<option value="CO">CO</option>
+	<option value="CT">CT</option>
+	<option value="DE">DE</option>
+	<option value="DC">DC</option>
+	<option value="FL">FL</option>
+	<option value="GA">GA</option>
+	<option value="HI">HI</option>
+	<option value="ID">ID</option>
+	<option value="IL">IL</option>
+	<option value="IN">IN</option>
+	<option value="IA">IA</option>
+	<option value="KS">KS</option>
+	<option value="KY">KY</option>
+	<option value="LA">LA</option>
+	<option value="ME">ME</option>
+	<option value="MD">MD</option>
+	<option value="MA">MA</option>
+	<option value="MI">MI</option>
+	<option value="MN">MN</option>
+	<option value="MS">MS</option>
+	<option value="MO">MO</option>
+	<option value="MT">MT</option>
+	<option value="NE">NE</option>
+	<option value="NV">NV</option>
+	<option value="NH">NH</option>
+	<option value="NJ">NJ</option>
+	<option value="NM">NM</option>
+	<option value="NY">NY</option>
+	<option value="NC">NC</option>
+	<option value="ND">ND</option>
+	<option value="OH">OH</option>
+	<option value="OK">OK</option>
+	<option value="OR">OR</option>
+	<option value="PA">PA</option>
+	<option value="RI">RI</option>
+	<option value="SC">SC</option>
+	<option value="SD">SD</option>
+	<option value="TN">TN</option>
+	<option value="TX">TX</option>
+	<option value="UT">UT</option>
+	<option value="VT">VT</option>
+	<option value="VA">VA</option>
+	<option value="WA">WA</option>
+	<option value="WV">WV</option>
+	<option value="WI">WI</option>
+	<option value="WY">WY</option></select><font color="red">*</font></td>
+    </tr>
+        <tr>
+          <td>Zip code:</td>
+          <td><input name="BillingPostalCode" type="text" id="BillingPostalCode" value="<?php echo $zip;?>" size="15" required/><font color="red">*</font></td>
+        </tr>
+</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>Payment Information</strong></td>
+    </tr>
+    <tr>
+      <td>
+        <tr>
+          <td width="29%">Name on Credit Card:</td>
+          <td width="71%"><input name="NameOnCard" type="text" id="NameOnCard" value="<?php echo $fullname;?>" size="40" required/><font color="red">*</font>
+            <input name="PaymentType" type="hidden" id="PaymentType" value="CreditCard"/></td>
+        </tr>
+        <tr>
+          <td>Credit card number:</td>
+          <td><input name="CardNumber" type="text" id="CardNumber" size="40" required/><font color="red">*</font></td>
+        </tr>
+        <tr>
+          <td>CV2: </td>
+          <td><input name="Cvv2" type="text" id="Cvv2" size="6" required/><font color="red">*</font></td>
+        </tr>
+        <tr>
+          <td>Expiration Date:</td>
+          <td><select name="ExpirationMonth" id="ExpirationMonth">
+            <option value="01">January</option>
+            <option value="02">February</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">August</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+            <select name="ExpirationYear" id="ExpirationYear"><option value="11">2011</option>
+              <option value="12">2012</option>
+              <option value="13">2013</option>
+              <option value="14">2014</option>
+              <option value="15">2015</option>
+              <option value="16">2016</option>
+              <option value="17">2017</option>
+              <option value="18">2018</option>
+              <option value="19">2019</option>
+              <option value="20">2020</option></select><font color="red">*</font></td>
+        </tr>
+</td>
+    </tr>
+    </table>
+    <tr>
+
+<tr>
+  <td style="background-color:lightgrey;">
+<h1>Your Bike Commute Challenge merchandise order shipped by our fulfillment partner,<br> <a href="http://www.co-operations.com/" target="_blank">Co-Operations</a>.</h1>
+    </td>
+</tr>
+
+<td><hr>
+          
+<input type="hidden" name="OnSuccessUrl" id="OnSuccessUrl" 	value="http://www.btaoregon.org/authorized/" /><input type="hidden" name="OnDeclineUrl" id="OnDeclineUrl" 	value="http://www.btaoregon.org/declined/" /><input type="hidden" name="OnErrorUrl" id="OnErrorUrl" 		value="http://www.btaoregon.org/error/" /><input type="hidden" name="AccountGuid" id="AccountGuid" value="YOURACCOUNTGUID" /><input type="hidden" name="AccountID" id="AccountID" value="YOURACCOUNTID" /><input type="hidden" name="WID" id="WID" value="YOURCHECKOUTPAGEWID" /><input type="hidden" name="RefID" id="RefID" value="BCC-2014" /><input type="hidden" name="Tracker" id="Tracker" value="BCC-2014" /><input type="hidden" name="SendReceipt" id="SendReceipt" value="true" /><input type="hidden" name="OrderMode" id="OrderMode" value="Production" /><input type="hidden" name="TransactionType" id="TransactionType" value="Payment" /><input name="Subm Donation" type="submit" id="Subm Donation" value="Submit Payment" /></td>
+    </tr>
+ </table>
+</form>
